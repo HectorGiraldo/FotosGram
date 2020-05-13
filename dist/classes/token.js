@@ -25,5 +25,5 @@ class Token {
     }
 }
 exports.default = Token;
-Token.seed = 'este-es-el-seed-de-mi-app';
+Token.seed = process.env.SEED || 'este-es-el-seed-de-mi-app-desarrollo';
 Token.caducidad = '30d';
